@@ -2,6 +2,17 @@
 
 All PDFs of the readings can be found on the course canvas page.
 
+## Coding Resources
+
+* Brown's Center for Computation and Visualization
+  * [Jupyter Hub Documentation](https://docs.ccv.brown.edu/jupyterhub/)
+  * [OSCAR Documentation](https://docs.ccv.brown.edu/oscar/)
+  * If all else fails and you can't find a solution after looking through the documentation or Google email  [support@ccv.brown.edu](mailto:support@ccv.brown.edu)
+* Python Tutorials
+  * [Jerry Pussinen's Python3 Course](https://github.com/jerry-git/learn-python3)
+  * [UNC's Training in Biomedical & Biological Sciences Python3 Course](https://github.com/How-to-Learn-to-Code/python-class)
+  * [Jam3's Math as Code Examples](https://github.com/Jam3/math-as-code/blob/master/PYTHON-README.md)
+
 ## Important Dates
 
 |  Date   |                        Notes                         |
