@@ -1,389 +1,147 @@
 # BIOL 1435
-	Course Instructor: David Peede
+	Course Instructor: Dave Peede (he/him/his)
 	Meeting Times: Tu/Thu 2:30 pm - 3:50 pm
 
+Welcome to BIOL 1435, you have worked hard to be here; you belong here! Congratulations on all your achievements thus far, and welcome to the course! I’m excited you are here, and I hope it will be a great semester!
+
+My name is David Peede, but please call me Dave. I am a 3rd year PhD candidate studying speciation genetics and I will be the instructor for this course.
 
 ---
 ## This semester we will learn about...
 
+So I would like to start out with two house keeping items. 1) I approved all override requests so it is up to you to decide if this class is a good fit.
+2) The course is technically called "Computational Methods for Studying Demographic History with Molecular Data" but a more accurate course title is "Theoretical Aspects and Computational Methods for Studying Evolutionary Genetics."
+
+This semester we will cover four modules and hopefully get to module five.
+
 ---
-#### Population Genetics
+#### Evolutionary Genetics
 /assets/26jan23_drift_sim.svg
 size: contain
 y: bottom
 
+In module one we will go over some foundational concepts in evolutionary genetics. For example, the plot I am showing shows the change in allele frequencies over 1000 generations for a population consisting of 1000 diploid individuals with an initial allele frequency of 0.5.
+
+Question: Can someone explain why the final frequency is different between simulation replicates?
+
+Answer: Random chance aka genetic drift! When we simulate this process over many generations even small fluctuations each generation can lead to large changes over time. Genetic drift is a random process so in each generation an allele may increase or decrease. 
+
 ---
-#### Coalescent Theory
-/assets/26jan23_gene_trees.svg
+#### Coalescent Theory & Tree-Thinking[^Data from: Cui et al., 2013]
+/assets/26jan23_fish_trees.svg
 size: contain
 y: bottom
 
+In module two we will dive into coalescent theory, which is a model used to study how lineages of alleles in a sample have originated from a common ancestor. You may be familiar with this concept in terms of a phylogenetic tree, which is depicted on the left. In this class we will refer to these type of trees as species or population trees, as they describe the overall evolutionary relationship among lineages. On the right I have plotted the 160 individual genealogical or gene trees which described the evolutionary relationship among lineages for a particular locus. (Note to self: the node colors correspond to geographic sampling).
+
+Question: Why might an individual gene tree differ from the species tree?
+
+Answer: Gene flow, unequal rates of evolution, ILS
+
 ---
-#### Demographic Processes
+#### Population Differentiation & Demography[^Demographic model from: Ragsdale & Gravel, 2019]
 /assets/26jan23_ooa_aa.svg
 size: contain
 y: bottom
 
+In module three we will learn how to identify population structure, make inferences about gene flow, and about different techniques to infer the demographic history from a set of samples.
+
+Question: Who would like to take a guess about what the arrows mean in this figure.
+
+Answer: Divergence and gene flow.
+
 ---
-#### Natural Selection 
+#### Recombination & Selection
 /assets/26jan23_sel_sweep.svg
 size: contain
 y: bottom
 
+In the last module we will discover how the recombination process and natural selection complicate everything we learned in the previous three modules. For example, to generate this figure I simulated a 1 Mb locus where I introduced a beneficial in the middle of the locus. The dashed line represents the neutral expectation for diversity (ie pi = 4 * Ne) but we can see that our simulation differs from this expectation.
+
+Question: What trends might we be able to conclude from this plot?
+
+Answer: Positive selection reduces genetic diversity.
+
 ---
 ## Icebreaker
 
-To do: come up with some type of icebreaker. 
-
+I would like everyone to say there name, year, major, and favorite place to eat in Providence.
 
 ---
 ## Syllabus
 
 Go through the syllabus here.
 
+---
+## JupyterHub Etiquette 
+
+Now I would like to quickly go over some Jupyter Hub etiquette.
 
 ---
+## [https://biol1435.jupyter.brown.edu](https://biol1435.jupyter.brown.edu) 
 
-
-
----
-#### Outline
-	1. Course overview & expectations
-	2. Assessments
-	3. Course policies
-	4. How to be successful in this course
-
+So, the hub takes roughly ~10 minutes to warm up if there are no users, and since we will be coding most classes when you come to class please log in.
 
 ---
-#### Outline
-	1. ==Course overview & expectations==
-	2. Assessments
-	3. Course policies
-	4. How to be successful in this course
+## Do not load anything to JupyterHub unless instructed
 
+We have limited storage and computing resources, so please don't upload anything that I haven't asked you to. These kind of issues will impact everyone so please cognizant. 
 
 ---
-#### Course Overview
-	* Module 1: Introduction to BIOL1435 & Evolutionary Genetics
-	* Module 2: Introduction to Coalescent Theory & Tree-Thinking
-	* Module 3: Population Differentiation & Demography
-	* Module 4: Recombination & Selection
-	* Module 5: Advanced Topics in Population Genomics
+## Save your work early and often
 
+This is just good rule of thumb in general and you will thank me later.
 
 ---
-#### Required Material & Prerequisites
-	* No book, just a laptop!
-	* MATH 0100, BIOL 0470 or BIOL 0480
-		* Some type of statistics and/or programming course will also be helpful!
+## For assignments you *may* want to download your work
 
+I have been told that there hasn't been issues yet but it is a non-zero probability that something happened to Brown's google server and delete everything. So for problem sets especially, it may be good idea to download your Jupyter notebook after you are done working on it for the day.
 
 ---
-
-#### Course expectations
-	* Do the readings
-	* Be engaged during lectures
-	* Contribute to a safe, inclusive, and respectful learning environment
-
-
----
-#### Outline
-	1. Course overview & expectations
-	2. ==Assessments==
-	3. Course policies
-	4. How to be successful in this course
-
-
----
-#### Assessments
-	1. Class participation
-	2. Paper presentation and discussions
-	3. Reaction paper
-	4. Quizzes
-	5. Problem sets
-	6. Final Project
-
-
-
-
-
-
----
-### Easy like Sunday morning
-## Don’t stuff your slides with text 
-
-Putting a lot of text on a slide and reading it out to the audience is the #1 presentation killer. 
-
----
-## ⇥
-	(This is the symbol for Tab)
-
-You can put a lot of text on the slide, but, really, don't do it. Let it go.
-
----
-	*Seriously.* Stop bothering people with walls of text. And if you have to show a lot of text, do not read it all from the slide. It’s a bad habit and a very common one. No one will listen to you if you do this. People will read your slide instead. No one will remember what you said.
-
-	They’ll be too distracted by the text to listen—and too distracted by your voice to remember what they have read. But no rule is without exception! If you have a good reason to show a wall of text, add a tab in front of your paragraph. 
-
-Use text as your script and choose visible elements carefully. Remember: less is more.
-
----
-### Bullet lists
-	- Increase cognitive load
-	- Look and feel robotic  
-	- Are distracting
-	- Bore the hell out of everyone
-	- Make you predictable
-	- Sound and look like notes
-	- Should be notes
-
-These should be reading notes. This kind of slide looks like a lot of work, and it directly sabotages your presentation. It's as if you finished your sentences yourself.
-
----
-### Write it, cut it, paste it
-## Focus on the story 
-
-To make people listen to you, you need a good story. Stories connect. A good story has the power to make people look at the world through your eyes. The door to make them look through your eyes will not get unlocked with stock images, graphs, and bullet lists, but with your voice. 
-
-You need beginning-middle-end. Your presentation's visuals should help you get attention, make your point, and keep people oriented. With iA Presenter, you don’t *design* your presentation, you *write* it. 
-
----
-https://ia.net/presenter-assets/inspector.png
-x: left
-y: top
-
-### Use the text Inspector to format.
-
-To write a headline, you add a hash in front of it. To add an image, you drag it into the Editor. Writing bold, you use **two** asterisks. To write a list, You just add a hyphen or a number with a dot. This is called Markdown.
-
-If you play with Markdown for a couple of minutes, you’ll only need help for more difficult matters. Adding a link, footnote, or table requires more skills. To promote familiarity with advanced Markdown, we have added a formatting inspector.  
-
----
-### Keep em separated
-## Discern what you say and what you show 
-
-In common presentations, the script is called “notes.” They are squeezed in at the bottom of the page. They’re an afterthought. With iA Presenter, your story is the very essence of every presentation. That doesn't mean that every presentation needs to be a TED talk. But every time you speak, you need to have something to say.
-
-Usually, what you want to say already exists in some form. You can paste an existing text, and you are 50% done. All you need are page breaks and visuals. The story-centered text-first approach is what makes iA Presenter so much faster than graphic presentation tools.
-
-To create a page break, you simply add three hyphens like this: 
-
----
-## ---
-	(Type this to create a page break)
-
----
-### Sound and vision
-## How to add images
-
-And how do you add an image? Drag and drop.
-
----
-Delete the image below and drag a new one in right below here:
-
-/theme/image1.jpg
-
-You can use regular Markdown or the simpler Content Block syntax with the /andyourfilename.jpg. Or you can use an image from the web. Simply paste the URL of an image from your browser.
-
----
-
-https://ia.net/presenter-assets/image-inspector.png
-x: left
-y: top
-
-You can align images top, left, and bottom, or put them in the background. Just click on the little arrow next to the image for image positioning controls. Note: You cannot position them statically but only relatively, as the design will adapt to different screen sizes. What does that mean?
-
-### Use the image inspector on the right to see and manage all your used and unused images and movies.
-
----
-### Let it go
-## Auto layout!
-
-You add your text and images, and Presenter picks the right layout for you. 
-
----
-
-/Theme/image1.jpg
-
-/Theme/image2.jpg
-
-Layouts are picked automatically depending on what type of visual elements you add. 
-
----
-/Theme/image1.jpg
-
-/Theme/image2.jpg
-
-/Theme/image3.jpg
-
-Do not try to get it pixel perfect! Layouts are responsive. They adapt to screen size. So, no more pinching on the phone, no more pixel-pushing because you’re presenting on a different monitor.
-
----
-### This is an H3 title
-
-/Theme/image1.jpg
-
-/Theme/image2.jpg
-
-/Theme/image3.jpg
-
-/Theme/image4.jpg
-
-/Theme/image5.jpg
-
-/Theme/image6.jpg
-
-Please note: **You need a line break in between each element.** If you leave out the line break, two elements will share the same cell. It's hard to describe. Just play with the line breaks to see how it works.
-
----
-https://ia.net/presenter-assets/responsive-design-text.png
-
-#### “But I *need* a certain design for my slides!”
-
-You certainly do. But you don't work in a certain medium. If you design a static slide, your layout will break on a tablet, a phone, or wide screen. 
-
-iA Presenter adapts your slides to different devices. So no more static layouts! It takes time to get used to it. But layouts do not matter as much as PowerPoint wants you to believe. What matters is that you have a great story. And that people can enjoy your story wherever with whatever design ever. Welcome to the multi-screen future. Goodbye to static design.
-
----
-https://ia.net/presenter-assets/responsive-design-pictures.png
-
-#### Let it go...
-
-In iA Presenter, the layout adapts to wide screens, different overhead projector ratios, Zoom windows, tablets, phones, watches, and toasters. No more static templates.
-
----
-
-https://ia.net/presenter-assets/responsive-design-text-cclumn.png
-
-#### Let it go...
-
-Multi-column layouts inevitably break on mobile phones. We have gotten used to websites adjusting to our devices. It's time to do the same for presentations. No more pinching and smudging around on the phone. 
-
----
-### She’s a rainbow
-## About that funky multi-color code
-
-We use color to give you an additional hint on where you are inside a presentation. The cursor changes color, too!
-
-**Blue** is a cold start
-**Purple** is to warm up
-**Red** is when things get heated
-**Orange** prepares you for a sweet end
-**Gold** is the afterglow
-
-You are not forced to use these colors. We encourage you to deal with the design at the end of your process. You can change the design by picking different themes. Within a theme, you can edit colors, fonts, header, footer, and logo. 
-
-
----
-https://ia.net/presenter-assets/basel.png
-y: top
-
-https://ia.net/presenter-assets/sf.png
-y: top
-
-https://ia.net/presenter-assets/tokyo.png
-y: top
-
-https://ia.net/presenter-assets/paris.png
-y: top
-
-https://ia.net/presenter-assets/milano.png
-y: top
-
-https://ia.net/presenter-assets/copenhagen.png
-y: top
-
-You can create your own very special theme. You can make a theme for your company, and then everyone's presentation will be spot on CI. But you’ll need some CSS skills. If you get a bunch of licenses, we'll help you.
-
----
-### Too funky for you?
-## Changing fonts and colors
-
-Click on the inspector buttons in the title bar. The Design Tab lets you change fonts, colors, headers, and more.
-
----
-
-
-https://ia.net/presenter-assets/style.png
-y: top
-
-### Our templates are colorful, typographic, and they work on every device. 
-
----
-### Under pressure
-## How do I present? 
-
-Press play in the title bar top right to enter presentation mode. You have two windows: A teleprompter for you and the visuals for the audience.
-
----
-### Teleprompter: What you see  
-
-https://ia.net/presenter-assets/teleprompter.png
+#### Always shut down your sever
+/assets/26jan23_shut_down.png
 size: contain
+y: bottom
 
-### Visualizer: What they see  
-
-https://ia.net/presenter-assets/visualizer.png
-size: contain
-
-We purposely do not go full screen right away. This allows you to work with the editor/teleprompter and presentation window on one screen. Why? 
-
-- So you can prepare and rehearse your presentation on one screen. 
-- Most presentations these days are done via video chat on a single-screen device. 
-- Managing windows and making them fullscreen is easy and pleasant. Auto-fullscreen is unsettling and hard to manage. 
+Shutting down your server after you are done working not only  is a good practice, but will always free up resources for your classmates!
 
 ---
-### Back in Black
-## Create a text document handout
+## How to be successful in BIOL 1435
 
-What do I do after the presentation is done? You can send a PDF to your audience, with or without a script. 
-
----
-
-
-https://ia.net/presenter-assets/presentation.png
-size: contain
-
-https://ia.net/presenter-assets/handout.png
-size: contain
-
-You can also export your presentation as an easily readable regular text document. 
-
+So here is a quick guide for how to be successful in this course.
 
 ---
-### Faster Love 
-## Use existing text
+## Do the readings
 
-If you have a structured Markdown text with images, all you need to do to create a presentation is paste the Markdown and add page breaks. 
+First, and foremost do the readings. All the readings are up on canvas already. It is a lot of reading, but I chose the papers for a reason and will use them in assignments.
 
-You can also just open your existing Markdown file. iA Presenter will ask you if you want to convert it to slides, and your speech will be almost ready: 
+---
+## Ask questions
+
+If you have questions please write them down! Write questions down while you are doing the readings and during the lectures. Ask me about them during class or office hours. Additionally, at the end of every class I will have a google form where you all can let me know what was unclear. I will try my best to address as many of these as possible, and I will make clarification videos for concepts that multiple students are confused about.
+
+---
+## Follow the rubrics
+
+For each assignment I have explicitly indicated what is necessary to receive full credit. Address all those points and you will be in good shape.
 
 ---
 
-
-https://ia.net/presenter-assets/add-media.png
-size: contain
-
-To add an image from the web, just paste the URL into the editor. You can do that with YouTube videos, too.
+---
+#### JupyterHub Etiquette 
+	1. When you get into class please log on
+	2. Do not upload anything to JupyterHub
+	3. Save early and often
+	4. For assignments you *may* want to download your work
+	5. Always shut down your server
 
 ---
-### It's like a jungle!
-## Okay, but this is way too much default text!
-
-You’re right. Now that you know how it works, you can edit the default text under Preferences > General
-
----
-
-
-https://ia.net/presenter-assets/preferences.png
-size: contain
-y: top
-
-There are more settings there. Check out the Help section for the 999 features we already have before asking for more.
+#### How to be successful in this course
+	1. Do the readings
+	2. Ask questions
+	3. Start assignments early
+	4. Follow the rubrics
+	5. Look at Dave's code
 
 ---
-### Goosebumps
-## Now go and make nice things
-
-And send us your presentations. We love to see what you do with it.
-
+## Exit Ticket

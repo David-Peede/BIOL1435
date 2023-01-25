@@ -1,10 +1,10 @@
 {
+  "creatorIdentifier" : "net.ia.presenter",
+  "transient" : false,
   "net.ia.presenter" : {
-    "preset" : "Default",
-    "template" : "peede-prefs"
+    "template" : "peede-prefs",
+    "preset" : "Default"
   },
   "type" : "net.daringfireball.markdown",
-  "version" : 2,
-  "transient" : false,
-  "creatorIdentifier" : "net.ia.presenter"
+  "version" : 2
 }
