@@ -11,7 +11,7 @@ wget http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr2.phase3_
 
 
 
-__Step 2: Index the VCF file with [`tabix`](http://www.htslib.org/doc/tabix.html) __
+__Step 2: Index the VCF file with [`tabix`](http://www.htslib.org/doc/tabix.html)__
 
 ```bash
 # Index chromosome 2.
