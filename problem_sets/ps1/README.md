@@ -50,6 +50,9 @@ bcftools view -m2 -M2 -g ^miss -Oz -o tgp_lct_mcm6_biallelic_snps_anc_calls_filt
 __Step 6: Using [`scikit-allel`](https://scikit-allel.readthedocs.io/en/stable/) convert the VCF file to a HDF5 file__
 
 ```python
+# Import scikit-allel
+import allel
+
 # Convert the vcf file to HDF5 format.
 allel.vcf_to_hdf5(
     'tgp_lct_mcm6_biallelic_snps_anc_calls_filtered.vcf.gz',
