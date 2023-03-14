@@ -27,7 +27,7 @@ All PDFs of the readings can be found on the course canvas page.
 | 2MAR23  |            Problem set 2 due by 11:59 pm.            |
 | 8MAR23  | Problem set 3 assigned (due by 11:59 pm on 22MAR23). |
 | 9MAR23  |       Final project proposals due by 11:59 pm.       |
-| 16MAR23 |                    Module 3 quiz.                    |
+| 21MAR23 |                    Module 3 quiz.                    |
 | 22MAR23 |            Problem set 3 due by 11:59 pm.            |
 | 24MAR23 | Problem set 4 assigned (due by 11:59 pm on 7APR23).  |
 | 7APR23  |            Problem set 4 due by 11:59 pm.            |
