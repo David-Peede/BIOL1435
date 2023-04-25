@@ -12,6 +12,15 @@
 
 # Load the python module on oscar.
 module load python/3.11.0
+module load openssl/3.0.0
+
+# Create a virtual environment.
+python3 -m venv heli
+# Activate the virtual environment.
+source heli/bin/activate
+# Install the necessary packages.
+python3 -m pip install numpy
+python3 -m pip install pandas
 
 # Perform Fst and D+ bootstrapping for the butterflies.
 python heli_chr18_100kb_bootstrapping.py
