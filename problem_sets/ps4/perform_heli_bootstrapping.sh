@@ -19,8 +19,7 @@ python3 -m venv heli
 # Activate the virtual environment.
 source heli/bin/activate
 # Install the necessary packages.
-python3 -m pip install numpy
-python3 -m pip install pandas
+python3 -m pip install pandas==1.5.3
 
 # Perform Fst and D+ bootstrapping for the butterflies.
 python heli_chr18_100kb_bootstrapping.py
