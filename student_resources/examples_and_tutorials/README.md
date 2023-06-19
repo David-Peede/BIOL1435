@@ -23,5 +23,3 @@ Tutorial about different strategies for calculating summary statistics from a VC
 Tutorial about some `NumPy` basics—still under development (v1).
 
 
-
-Last Update: 5SEP22

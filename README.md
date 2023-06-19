@@ -1,5 +1,7 @@
 # Theoretical & Computational Population Genetics (BIOL 1435)
 
+Welcome 
+
 All PDFs of the readings can be found on the course canvas page.
 
 ## Coding Resources
