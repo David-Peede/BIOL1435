@@ -53,11 +53,11 @@ cd /gpfs/data/biol1435
 
 Just for good measures, let's check where we are by typing `pwd` and subsequently pressing enter and if everything works correctly you should see  `/gpfs/data/biol1435` printed to stdout. If you were successful your screen should look something like this:
 
-![navigating-oscar-example](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/navigating-oscar-example.png)
+![navigating-oscar-example](../../lectures/figures/navigating-oscar-example.png)
 
 So we are in the `biol1435` directory, but now what? Let's take a look at what is actually in our `biol1435` directory—__NOTE:__ You should be working from the `biol1435` directory for any class related project. Type `ll` (which is equivalent to `ls -l`) and press enter. This command lists all the files that are located in your working directory to stdout in long form, which provides us some additional information that you can read more about [here](https://linuxize.com/post/how-to-list-files-in-linux-using-the-ls-command/). Again, if everything worked correctly your terminal should look similar to this:
 
-![biol1435-directory](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/biol1435-directory.png)
+![biol1435-directory](../../lectures/figures/biol1435-directory.png)
 
 You will notice that most directories are associated with the username of students. If you have not already done so please go ahead and make yourself a directory by using the following command and pressing enter.
 
@@ -87,7 +87,7 @@ mkdir logs
 
 If you were successful your screen should look something like this:
 
-![msmc-directory](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/msmc-directory.png)
+![msmc-directory](../../lectures/figures/msmc-directory.png)
 
 
 
@@ -120,7 +120,7 @@ msmc2 -p 1*2+15*1+1*2 -o AFR.msmc2 -I 4,5,6,7 ${DATA}/EUR_AFR.chr1.multihetsep.t
 
 Then once it is copied type `i` which lets `vim` know that we are changing from normal mode to insert mode. Once you are in insert mode go ahead and paste the SLURM script you just copied, and then press the escape key to change back to normal mode. If everything went according to plan your screen should look something like this:
 
-![vim-pt1](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/vim-pt1.png)
+![vim-pt1](../../lectures/figures/vim-pt1.png)
 
 Lastly, to save our text file and exit `vim ` type `:x`, hit enter, and lastly check the contents of your working directory using `ls` or `ll` to ensure you saved the SLURM script—__NOTE:__ `i` aka "insert", `:x` aka "save and quit", and `:q!`  aka "force quit" are the most basic yet fundamental commands you will need to use `vim` however if you want to learn more I reference [this `vim` cheat sheet](https://vim.rtorr.com/) almost every day! Now, that we have our SLURM script we need to make it executable, to do so we will need to change the [file permissions](https://linuxize.com/post/understanding-linux-file-permissions/) using the following snippet:
 
@@ -131,7 +131,7 @@ chmod +x infer_afr_ne.sh
 
 If you check the contents of your working directory it should look something like this:
 
-![file-permissions](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/file-permissions.png)
+![file-permissions](../../lectures/figures/file-permissions.png)
 
 Now, using `vim` make another SLURM script called `infer_eur_ne.sh`, fill it with the contents below (make sure you input your email), and change the file permissions such that it is executable.
 
@@ -160,7 +160,7 @@ msmc2 -p 1*2+15*1+1*2 -o EUR.msmc2 -I 0,1,2,3 ${DATA}/EUR_AFR.chr1.multihetsep.t
 
 If everything went according to plan your working directory should look something like this:
 
-![vim-pt2](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/vim-pt2.png)
+![vim-pt2](../../lectures/figures/vim-pt2.png)
 
 Now because I know each one of these jobs will take about 15 minutes to run let's go-ahead and submit both jobs to the scheduler using the following code:
 
@@ -172,7 +172,7 @@ sbatch infer_eur_ne.sh
 
 To check the status of your jobs you can type `myq` and press enter—note that `myq` is an OSCAR specific alias—your jobs may be running or waiting in the queue, but eventually your screen should look something like:
 
-![sbatch](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/sbatch.png)
+![sbatch](../../lectures/figures/sbatch.png)
 
 Ok now let's go over a couple things. First, to submit a job to SLURM it needs to be in the form of a SLURM script—ie have a SLURM header—for example:
 
@@ -228,11 +228,11 @@ scp infer_split.sh <username>@ssh.ccv.brown.edu:/gpfs/data/biol1435/<username>/m
 
 After which you will be prompted to enter your password, just like when you logged in OSCAR! If everything worked out your local terminal should look something like:
 
-![local2oscar](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/local2oscar.png)
+![local2oscar](../../lectures/figures/local2oscar.png)
 
 And your directory on OSCAR should look something like:
 
-![scp2oscar](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/scp2oscar.png)
+![scp2oscar](../../lectures/figures/scp2oscar.png)
 
 Now let's go ahead and submit `infer_split.sh` to the SLURM scheduler by executing `sbatch infer_split.sh ` and while that runs either use `vim` or the secure copy to create and make `compute_cross_coal.sh` executable (BUT DO NOT SUBMIT YET):
 
@@ -284,7 +284,7 @@ python3 ${HELP}/convert_msmc_to_demes.py AFR.msmc2.final.txt 1.25e-8 > AFR.msmc2
 
 Once you are done go-ahead and check your queue using `myq` to see if we are ready to submit those last two jobs to the SLURM scheduler. If your  working directory looks something like this:
 
-![empty-queue](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/empty-queue.png)
+![empty-queue](../../lectures/figures/empty-queue.png)
 
 ###### Then go ahead and submit those last two SLURM scripts—ie:
 
@@ -306,6 +306,6 @@ scp <username>@ssh.ccv.brown.edu:/gpfs/data/biol1435/<username>/msmc_tutorial/*.
 
 If you correctly completed the last step your terminal on your local system should look similar to:
 
-![oscar2local](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/oscar2local.png)
+![oscar2local](../../lectures/figures/oscar2local.png)
 
 And that is it for the introduction to OSCAR, now let's finish the MSMC analyses on the Jupyter Hub!
