@@ -1,8 +1,8 @@
-# Theoretical & Computational Population Genetics (BIOL 1435)
+# Computational Population Genetics (BIOL 1435)
 
-Welcome 
+ ![biol1435_logo](biol1435_logo.png)
 
-All PDFs of the readings can be found on the course canvas page.
+
 
 ## Coding Resources
 
@@ -18,6 +18,8 @@ All PDFs of the readings can be found on the course canvas page.
   * [Graham Coop's PopGen Notes](https://github.com/cooplab/popgen-notes)
 
 ## Spring 2k23 Important Dates
+
+__NOTE:__ All PDFs of the readings can be found on the course canvas page.
 
 |  Date   |                        Notes                         |
 | :-----: | :--------------------------------------------------: |
