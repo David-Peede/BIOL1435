@@ -40,7 +40,7 @@ ssh <username>@ssh.ccv.brown.edu
 
 You will then be prompted to log in using your password associated with your Brown University account and then press enter—__NOTE:__ you will not see anything while you are typing, but will get a message from OSCAR once you have successfully logged in! If you were successful your screen should look something like this:
 
-![oscar-login-example](/Users/davidpeede/Dropbox/GitHub/BIOL1435/lectures/figures/oscar-login-example.png)
+![oscar-login-example](/../oscar-login-example.png)
 
 ## Navigating around OSCAR.
 
