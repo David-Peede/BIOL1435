@@ -8,7 +8,7 @@ Here you will find the problem sets that accompany each module of the course. Th
 
 ### `ps1`
 
-For this problem set studnets will look at patterns of genetic diversity at the *LCT* and *MCM6* genes in the phase three release of the 1000 Genomes Project. Studies have shown that these loci exhibit signals consistent with positive selection in European populations and is associated with lactase persistence—a trait unique among mammals thought to be a result of cattle domestication and the incorporation of milk into the adult diets of several human populations (Enattah et al. 2002; Marnetto and Huerta-Sánchez 2017; Smith et al. 2018).
+For this problem set students will look at patterns of genetic diversity at the *LCT* and *MCM6* genes in the phase three release of the 1000 Genomes Project. Studies have shown that these loci exhibit signals consistent with positive selection in European populations and is associated with lactase persistence—a trait unique among mammals thought to be a result of cattle domestication and the incorporation of milk into the adult diets of several human populations (Enattah et al. 2002; Marnetto and Huerta-Sánchez 2017; Smith et al. 2018).
 
 ### `ps2`
 

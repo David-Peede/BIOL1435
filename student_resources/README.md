@@ -13,3 +13,8 @@ In this directory you will find a number of helpful examples tutorials from how 
 ### `logistics`
 
 In this directory you will find the course syllabus and rubrics.
+
+### `previous_final_projects`
+
+In this directory you will find selected examples of final projects from previous semesters.
+
