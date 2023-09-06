@@ -2,9 +2,9 @@
 
  ![biol1435_logo](biol1435_logo.png)
 
+Welcome to the BIOL 1435 course repository! BIOL 1435 is designed for upper level undergraduate and graduate students or for anyone interested in learning about population genetic theory and how to apply those concepts to simulated and publicly available genomic datasets. By the end of this course students will have (1) an improved understanding of core concepts in population genetics; (2) gained some level of fluency with the Python programming language; (3) learned how to model and simulate genetic variation within and between population(s); (4) applied the course material to publicly available genetic datasets to make inferences about the evolutionary history of humans and other taxa; (5) analyzed, critiqued, and presented primary journal articles to understand how said articles have advanced the field and/or instigated debates within the field. This repository contains all the code used to generate lecture materials, lecture slides,  lecture recordings, in class exercise notebooks, problem set, and other helpful resources. Please note that since this is an active Brown University course the in class quizzes and problem set answer keys are not posted on this repository. Instructors and non-Brown University students can submit a GitHub issue requesting access to these resources.
 
-
-## Coding Resources
+## Helpful Resources
 
 * Brown's Center for Computation and Visualization
   * [Jupyter Hub Documentation](https://docs.ccv.brown.edu/jupyterhub/)
@@ -16,6 +16,51 @@
   * [Jam3's Math as Code Examples](https://github.com/Jam3/math-as-code/blob/master/PYTHON-README.md)
 * Free Evolutionary Genetic Resources
   * [Graham Coop's PopGen Notes](https://github.com/cooplab/popgen-notes)
+
+## Suggested Workflow
+
+When I started my PhD in 2020 I transitioned from a majority wet-lab environment to a completely dry-lab environment and did not have a strong statistical thinking background nor any experience coding in Python. Consequently, outside of developing a course for Brown University, a huge motivation for me was to create a set of materials for those just starting out in population genetics research. For those who are not Brown University students taking BIOL 1435 below you will find a suggested outline for self-paced learning. If during your self-paced learning experience, you encounter unanswered questions or need any clarifications please submit a GitHub issue and I will try my best to address it in a timely fashion. __NOTE:__ This repository should viewed as a beginner's guide for those interested in theoretical aspects of and computational approaches in population genetics. Consequently, there are several important topics not covered in the material and the material tends to lean towards my broader interests.
+
+- Module 0: Python Programming
+  - If you don't have experience coding in Python first work through the three Python tutorials.
+- Module 1: Introduction to BIOL 1435 & Evolutionary Genetics
+  - Lecture: [welcome_to_biol1435_2k23.pdf](https://github.com/David-Peede/BIOL1435/blob/main/lectures/slides/welcome_to_biol1435_2k23.pdf)
+    - Read: 1000 Genomes Project Consortium. "A global reference for human genetic variation." Nature 526.7571 (2015): 68.
+    - Read: Korunes, Katharine L., and Kieran Samuk. "`pixy`: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data." Molecular ecology resources 21.4 (2021): 1359-1368.
+  - Lecture: [diversity_and_variation_2k23.pdf](https://github.com/David-Peede/BIOL1435/blob/main/lectures/slides/diversity_and_variation_2k23.pdf)
+    - Exercise: [diversity_and_variation_2k23.ipynb](https://github.com/David-Peede/BIOL1435/blob/main/lectures/exercise_notebooks/diversity_and_variation_2k23.ipynb)
+    - Read: Rosenberg, Noah A., and Magnus Nordborg. "Genealogical trees, coalescent theory and the analysis of genetic polymorphisms." Nature Reviews Genetics 3.5 (2002): 380-390.
+  - Problem Set: [ps1](https://github.com/David-Peede/BIOL1435/tree/main/problem_sets/ps1)
+    - Optional: Submit a GitHub issue to check your answers.
+- Module 2: Introduction to Coalescent Theory & Tree-Thinking
+  - Lecture: [wf_and_coal_theory_2k23.pdf](https://github.com/David-Peede/BIOL1435/blob/main/lectures/slides/wf_and_coal_theory_2k23.pdf)
+    - Exercise: [intro_to_msprime_2k23.ipynb](https://github.com/David-Peede/BIOL1435/blob/main/lectures/exercise_notebooks/intro_to_msprime_2k23.ipynb)
+    - Read: Patterson, Nick, et al. "Genetic evidence for complex speciation of humans and chimpanzees." Nature 441.7097 (2006): 1103-1108.
+    - Read: Patterson, Nick, Alkes L. Price, and David Reich. "Population structure and eigenanalysis." PLoS genetics 2.12 (2006): e190.
+    - Bhatia, Gaurav, et al. "Estimating and interpreting $F_{ST}$: the impact of rare variants." Genome research 23.9 (2013): 1514-1521.
+  - Problem Set: [ps2](https://github.com/David-Peede/BIOL1435/tree/main/problem_sets/ps2)
+    - Optional: Submit a GitHub issue to check your answers.
+- Module 3: Population Differentiation & Demography
+  - Lecture: [pop_structure_2k23.pdf](https://github.com/David-Peede/BIOL1435/blob/main/lectures/slides/pop_structure_2k23.pdf)
+    - Exercise: [pop_structure_and_pca_2k23.ipynb](https://github.com/David-Peede/BIOL1435/blob/main/lectures/exercise_notebooks/pop_structure_and_pca_2k23.ipynb)
+    - Read: Kartzinel, Rebecca Y., et al. "Divergence and isolation of cryptic sympatric taxa within the annual legume *Amphicarpaea bracteata*." Ecology and evolution 6.10 (2016): 3367-3379.
+    - Read: Durand, Eric Y., et al. "Testing for ancient admixture between closely related populations." Molecular biology and evolution 28.8 (2011): 2239-2252.
+    - Read: Dagilis, Andrius J., et al. "A need for standardized reporting of introgression: Insights from studies across eukaryotes." Evolution Letters 6.5 (2022): 344-357.
+    - Read: Brandvain, Yaniv, et al. "Speciation and introgression between *Mimulus nasutus* and *Mimulus guttatus*." PLoS genetics 10.6 (2014): e1004410.
+  - Lecture: [introgression_2k23.pdf](https://github.com/David-Peede/BIOL1435/blob/main/lectures/slides/introgression_2k23.pdf)
+    - Exercise: [introgression_simulations_2k23.ipynb](https://github.com/David-Peede/BIOL1435/blob/main/lectures/exercise_notebooks/introgression_simulations_2k23.ipynb)
+    - Read: Rosenzweig, Benjamin K., et al. "Powerful methods for detecting introgressed regions from population genomic data." Molecular ecology 25.11 (2016): 2387-2397.
+    - Read: Eyre-Walker, Adam. "The genomic rate of adaptive evolution." Trends in ecology & evolution 21.10 (2006): 569-575.
+    - Read: Charlesworth, Brian, and Jeffrey D. Jensen. "Effects of selection at linked sites on patterns of genetic variability." Annu Rev Ecol Evol Syst 52.1 (2021): 177-197.
+  - Problem Set: [ps3](https://github.com/David-Peede/BIOL1435/tree/main/problem_sets/ps3)
+    - Optional: Submit a GitHub issue to check your answers.
+- Module 4: Selection
+  - Lecture: [natural_selection_2k23.pdf](https://github.com/David-Peede/BIOL1435/blob/main/lectures/slides/natural_selection_2k23.pdf)
+    - Exercise: [natural_selection_2k23.ipynb](https://github.com/David-Peede/BIOL1435/blob/main/lectures/exercise_notebooks/natural_selection_2k23.ipynb)
+    - Read: Huerta-Sánchez, Emilia, et al. "Altitude adaptation in Tibetans caused by introgression of Denisovan-like DNA." Nature 512.7513 (2014): 194-197.
+    - Read: Calfee, Erin, et al. "Selective sorting of ancestral introgression in maize and teosinte along an elevational cline." PLoS genetics 17.10 (2021): e1009810.
+  - Problem Set: [ps4](https://github.com/David-Peede/BIOL1435/tree/main/problem_sets/ps4)
+    - Optional: Submit a GitHub issue to check your answers.
 
 ## Spring 2k23 Important Dates
 
