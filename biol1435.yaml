@@ -1,0 +1,17 @@
+name: biol1435
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - ipcoal
+  - matplotlib
+  - jupyter
+  - demesdraw
+  - h5py
+  - stdpopsim
+  - scikit-allel
+  - sympy
+  - scikit-learn
+  - statsmodels
+prefix: /Users/davidpeede/opt/anaconda3/envs/biol1435

@@ -2,7 +2,54 @@
 
  ![biol1435_logo](biol1435_logo.png)
 
-Welcome to the BIOL 1435 course repository! BIOL 1435 is designed for upper level undergraduate and graduate students or for anyone interested in learning about population genetic theory and how to apply those concepts to simulated and publicly available genomic datasets. By the end of this course students will have (1) an improved understanding of core concepts in population genetics; (2) gained some level of fluency with the Python programming language; (3) learned how to model and simulate genetic variation within and between population(s); (4) applied the course material to publicly available genetic datasets to make inferences about the evolutionary history of humans and other taxa; (5) analyzed, critiqued, and presented primary journal articles to understand how said articles have advanced the field and/or instigated debates within the field. This repository contains all the code used to generate lecture materials, lecture slides,  lecture recordings, in class exercise notebooks, problem set, and other helpful resources. Please note that since this is an active Brown University course the in class quizzes and problem set answer keys are not posted on this repository. Instructors and non-Brown University students can submit a GitHub issue requesting access to these resources.
+Welcome to the BIOL 1435 course repository! BIOL 1435 is designed for upper-level undergraduate and graduate students or for anyone interested in learning about population genetic theory and how to apply those concepts to simulated and publicly available genomic datasets. By the end of this course, students will have (1) an improved understanding of core concepts in population genetics; (2) gained some level of fluency with the Python programming language; (3) learned how to model and simulate genetic variation within and between population(s); (4) applied the course material to publicly available genetic datasets to make inferences about the evolutionary history of humans and other taxa; (5) analyzed, critiqued, and presented primary journal articles to understand how said articles have advanced the field and/or instigated debates within the field. This repository contains all the code used to generate lecture materials, in-class exercise notebooks, problem sets, and other helpful resources. Please note that since this is an active Brown University course, the in-class quizzes and problem set answer keys are not posted on this repository. Instructors and non-Brown University students can submit a GitHub issue requesting access to these resources.
+
+## Anaconda Environment
+
+BIOL 1435 utilizes Brown University's Jupyter Hub server to avoid troubleshooting on students' personal computers. You can run the following code to replicate the course's Anaconda environment for your own personal use.
+
+```bash
+# Create the BIOL 1435 conda enviornment.
+conda env create -f biol1435.yaml
+```
+
+## Repository Overview
+
+```bash
+├── lectures
+│   ├── data
+│   ├── exercise_notebooks
+│   ├── figure_notebooks
+│   ├── figures
+│   ├── recordings
+│   └── slides
+├── problem_sets
+│   ├── ps1
+│   ├── ps2
+│   ├── ps3
+│   └── ps4
+└── student_resources
+    ├── examples_and_tutorials
+    ├── logistics
+    └── previous_final_projects
+```
+
+- `lectures`: Materials used in class.
+  - `data`: Data used for lecture material and in-class exercises.
+  - `exercise_notebooks`: Jupyter notebooks for in-class exercises.
+  - `figure_notebooks`: Jupyter notebooks used for generating figures for lectures.
+  - `figures`: Figures used in lectures.
+  - `recordings`: Lecture recordings.
+  - `slides`: Lecture slides.
+- `problem_sets`: Materials used for creating problem sets.
+  - `ps1`: Problem set materials associated with Module 1: Introduction to BIOL 1435 & Evolutionary Genetics.
+  - `ps2`: Problem set materials associated with Module 2: Introduction to Coalescent Theory & Tree-Thinking.
+  - `ps3`: Problem set materials associated with Module 3: Population Differentiation & Demography.
+  - `ps4`: Problem set materials associated with Module 4: Selection.
+- `student_resources`: Resources for current and future students.
+  - `examples_and_tutorials`: Materials for help with derivations, coding, and how to read a scientific paper.
+  - `logistics`: Course syllabus and rubrics.
+  - `previous_final_projects`: Selected final projects from previous students.
 
 ## Helpful Resources
 
@@ -19,7 +66,7 @@ Welcome to the BIOL 1435 course repository! BIOL 1435 is designed for upper leve
 
 ## Suggested Workflow
 
-When I started my PhD in 2020 I transitioned from a majority wet-lab environment to a completely dry-lab environment and did not have a strong statistical thinking background nor any experience coding in Python. Consequently, outside of developing a course for Brown University, a huge motivation for me was to create a set of materials for those just starting out in population genetics research. For those who are not Brown University students taking BIOL 1435 below you will find a suggested outline for self-paced learning. If during your self-paced learning experience, you encounter unanswered questions or need any clarifications please submit a GitHub issue and I will try my best to address it in a timely fashion. __NOTE:__ This repository should viewed as a beginner's guide for those interested in theoretical aspects of and computational approaches in population genetics. Consequently, there are several important topics not covered in the material and the material tends to lean towards my broader interests.
+When I started my Ph.D. in 2020, I transitioned from a majority wet-lab to a completely dry-lab environment and did not have a strong statistical thinking background nor any experience coding in Python. Consequently, outside of developing a course for Brown University, a huge motivation for me was to create a set of materials for those starting out in population genetics research. For those who are not Brown University students taking BIOL 1435 below you will find a suggested outline for self-paced learning. If, during your self-paced learning experience, you encounter unanswered questions or need any clarifications, please submit a GitHub issue, and I will try my best to address it in a timely fashion. **NOTE:** This repository should viewed as a beginner's guide for those interested in theoretical aspects of and computational approaches in population genetics. Consequently, several important topics in population genetics are not covered in the material, and the material tends to lean toward my broader interests.
 
 - Module 0: Python Programming
   - If you don't have experience coding in Python first work through the three Python tutorials.
@@ -62,7 +109,11 @@ When I started my PhD in 2020 I transitioned from a majority wet-lab environment
   - Problem Set: [ps4](https://github.com/David-Peede/BIOL1435/tree/main/problem_sets/ps4)
     - Optional: Submit a GitHub issue to check your answers.
 
-## Spring 2k23 Important Dates
+## Course Development
+
+This repository contains the course material for the Spring 2023 semester of BIOL 1435. As this was my first semester teaching as the instructor of record, the lecture material should be continually refined and additional topics added. Moving forward, I anticipate the course material being updated on an annual basis after my amazing PI, Dr. Emilia Huerta-Sánchez, is done teaching this course in the spring. However, I encourage feedback on existing course material and the addition of new course material! For general feedback, feel free to submit a GitHub issue with your comments, and to add updates or new material, please submit a pull request!
+
+## Spring 2K23 Important Dates
 
 __NOTE:__ All PDFs of the readings can be found on the course canvas page.
 
