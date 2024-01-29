@@ -1,6 +1,6 @@
 # Computational Population Genetics (BIOL 1435)
 
- ![biol1435_logo](biol1435_logo.png)
+ ![biol1435_logo](../biol1435_logo.png)
 
 Welcome to the BIOL 1435 course repository! BIOL 1435 is designed for upper-level undergraduate and graduate students or for anyone interested in learning about population genetic theory and how to apply those concepts to simulated and publicly available genomic datasets. By the end of this course, students will have (1) an improved understanding of core concepts in population genetics; (2) gained some level of fluency with the Python programming language; (3) learned how to model and simulate genetic variation within and between population(s); (4) applied the course material to publicly available genetic datasets to make inferences about the evolutionary history of humans and other taxa; (5) analyzed, critiqued, and presented primary journal articles to understand how said articles have advanced the field and/or instigated debates within the field. This repository contains all the code used to generate lecture materials, in-class exercise notebooks, problem sets, and other helpful resources. Please note that since this is an active Brown University course, the in-class quizzes and problem set answer keys are not posted on this repository. Instructors and non-Brown University students can submit a GitHub issue requesting access to these resources.
 
